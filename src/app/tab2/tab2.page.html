@@ -9,7 +9,10 @@
 <ion-content [fullscreen]="true">
   <h1>Categories</h1>
   <section class="full-width">
-    <ion-button expand="full" color="secondary">Vegetables</ion-button>
+    <ion-button expand="full" [routerLink]="['vegetables']" color="secondary">Vegetables</ion-button>
+  </section>
+  <section class="full-width">
+    <ion-button expand="full" [routerLink]="['fruits']" color="secondary">Fruits</ion-button>
   </section>
   <h2> Top Rated Farmers</h2>
 
