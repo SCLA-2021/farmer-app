@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { VegetablePage } from '../vegetables/vegetables.page';
 import { FruitsPage } from '../fruits/fruits.page';
+import { SeedsPage } from '../seeds/seeds.page';
 
 import { Tab2Page } from './tab2.page';
 
@@ -21,6 +22,11 @@ const routes: Routes = [
     path: 'fruits',
     loadChildren: () =>
       import('../fruits/fruits.module').then(m => m.FruitsPageModule)
+  },
+  {
+    path: 'seeds',
+    loadChildren: () =>
+      import('../seeds/seeds.module').then(m => m.SeedsPageModule)
   }
 ];
 
