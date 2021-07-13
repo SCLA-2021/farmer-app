@@ -5,30 +5,12 @@
         Search
       </ion-title>
     </ion-toolbar>
-    <ion-searchbar showCancelButton="always"></ion-searchbar>
   </ion-header>
 
   <ion-content [fullscreen]="true">
-    <ion-list>
-      <ion-item>Lettuce</ion-item>
-      <ion-item>Cabbage</ion-item>
-      <ion-item>Buenos Aires</ion-item>
+    <ion-searchbar showCancelButton="always" [(ngModel)]="searchText"></ion-searchbar>
+    <ion-list *ngFor=" let hero of heroes | filter:searchText">
+      <ion-item> {{ hero.name }}, sells {{hero.produce}}</ion-item>
     </ion-list>
   </ion-content>
 </ion-app>
-<script>
-  const searchbar = document.querySelector('ion-searchbar');
-  const items = Array.from(document.querySelector('ion-list').children);
-
-  searchbar.addEventListener('ionInput', handleInput);
-
-  function handleInput(event) {
-    const query = event.target.value.toLowerCase();
-    requestAnimationFrame(() => {
-      items.forEach(item => {
-        const shouldShow = item.textContent.toLowerCase().indexOf(query) > -1;
-        item.style.display = shouldShow ? 'block' : 'none';
-      });
-    });
-  }
-</script>
