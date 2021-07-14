@@ -8,3 +8,15 @@ import { Component } from '@angular/core';
 export class Tab4Page {
   constructor() {}
 }
+export class HomePage implements OnInit {
+  type: string;
+  posts() {}
+
+  ngOnInit() {
+    this.type = 'Posts';
+  }
+
+  segmentChanged(ev: any) {
+    console.log('Segment changed', ev);
+  }
+}
