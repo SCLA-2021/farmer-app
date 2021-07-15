@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { VegetablePage } from '../vegetables/vegetables.page';
 import { FruitsPage } from '../fruits/fruits.page';
 import { SeedsPage } from '../seeds/seeds.page';
+import { ProfilePage } from '../profile/profile.page';
 
 import { Tab2Page } from './tab2.page';
 

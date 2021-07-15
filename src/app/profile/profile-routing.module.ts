@@ -4,8 +4,6 @@ import { ProfilePage } from './profile.page';
 import { FruitsPage } from '../fruits/fruits.page';
 import { SeedsPage } from '../seeds/seeds.page';
 
-import { ProfilePage } from './profile.page';
-
 const routes: Routes = [
   {
     path: '',
