@@ -39,12 +39,16 @@
         <ion-thumbnail slot="start">
           <ion-icon name="add-circle-outline"></ion-icon>
         </ion-thumbnail>
-        <ion-segment-button value="Posts" checked>
+        <ion-segment-button
+          value="Posts"
+          (click)="presentAlertPrompt()"
+          checked
+        >
           <ion-label>Add a Post</ion-label>
         </ion-segment-button>
       </ion-item>
     </ion-list>
-    
+
     <ion-list *ngSwitchCase="'Selling'">
       <ion-item>
         <ion-thumbnail slot="start">
