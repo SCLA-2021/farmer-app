@@ -27,6 +27,11 @@ const routes: Routes = [
     path: 'seeds',
     loadChildren: () =>
       import('../seeds/seeds.module').then(m => m.SeedsPageModule)
+  },
+  {
+    path: 'profile',
+    loadChildren: () =>
+      import('../profile/profile.module').then(m => m.ProfilePageModule)
   }
 ];
 
