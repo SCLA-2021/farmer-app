@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-segment
+      color="primary"
+      [(ngModel)]="type"
+      (ionChange)="segmentChanged($event)"
+      scrollable
+    >
+      <ion-segment-button value="Delivery" checked>
+        <ion-label>Delivery</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="Pickup">
+        <ion-label>Pickup</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+
+    <div [ngSwitch]="type">
+      <ion-list *ngSwitchCase="'Delivery'"> </ion-list>
+
+      <ion-list *ngSwitchCase="'Pickup'">
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img
+              src="https://media.wired.com/photos/59269cd37034dc5f91bec0f1/191:100/w_1280,c_limit/GoogleMapTA.jpg"
+            />
+          </ion-thumbnail>
+          <ion-label>Pickup this order at 2980 Capitol Expressway</ion-label>
+        </ion-item>
+      </ion-list>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <h2>Items in Cart</h2>
+  <h6>1x Boston Lettuce $1.45</h6>
+  <div>Total</div>
+  <div>Subtotal: $1.45</div>
+  <div>Delivery Fee: $1.45</div>
+  <div>Fees and estimated tax: $1.45</div>
+  <ion-button expand="full" [routerLink]="['vegetables']" color="secondary">Co</ion-button>
+</ion-content>
