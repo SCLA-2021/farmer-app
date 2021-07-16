@@ -2,20 +2,20 @@ import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
-import { CartPage } from './cart.page';
+import { PaymentPage } from './payment.page';
 
 describe('CartPage', () => {
-  let component: CartPage;
-  let fixture: ComponentFixture<CartPage>;
+  let component: PaymentPage;
+  let fixture: ComponentFixture<PaymentPage>;
 
   beforeEach(
     waitForAsync(() => {
       TestBed.configureTestingModule({
-        declarations: [CartPage],
+        declarations: [PaymentPage],
         imports: [IonicModule.forRoot(), ExploreContainerComponentModule]
       }).compileComponents();
 
-      fixture = TestBed.createComponent(CartPage);
+      fixture = TestBed.createComponent(PaymentPage);
       component = fixture.componentInstance;
       fixture.detectChanges();
     })
