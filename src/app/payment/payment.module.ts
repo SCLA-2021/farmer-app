@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { PaymentPage } from './payment.page';
+import { PaymentPageRoutingModule } from './payment-routing.module.ts';
+
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
 @NgModule({
@@ -12,6 +14,7 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
+    PaymentPageRoutingModule,
     RouterModule.forChild([{ path: '', component: PaymentPage }])
   ],
   declarations: [PaymentPage]
