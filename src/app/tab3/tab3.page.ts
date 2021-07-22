@@ -10,7 +10,7 @@ export class Tab3Page {
   searchText;
   heroes = [
     { id: 11, name: 'Mr. Nice', produce: 'Cabbage' },
-    { id: 12, name: 'Narco', produce: 'Lettuce' },
+    { id: 12, name: 'Miss P', produce: 'Lettuce' },
     { id: 13, name: 'Bomto', produce: 'Potatoes' },
     { id: 14, name: 'Celeritas', produce: 'Carrots' },
     { id: 15, name: 'Magneta', produce: 'Seeds' },
