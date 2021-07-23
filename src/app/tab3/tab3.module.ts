@@ -6,7 +6,6 @@ import { FormsModule } from '@angular/forms';
 import { Tab3Page } from './tab3.page';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
-
 import { Tab3PageRoutingModule } from './tab3-routing.module';
 
 @NgModule({
@@ -17,7 +16,8 @@ import { Tab3PageRoutingModule } from './tab3-routing.module';
     ExploreContainerComponentModule,
     RouterModule.forChild([{ path: '', component: Tab3Page }]),
     Tab3PageRoutingModule,
-    Ng2SearchPipeModule
+    Ng2SearchPipeModule,
+    Tab3PageRoutingModule
   ],
   declarations: [Tab3Page]
 })

@@ -6,6 +6,11 @@ const routes: Routes = [
   {
     path: '',
     component: Tab3Page,
+  },
+  {
+    path: 'profile',
+    loadChildren: () =>
+      import('../profile/profile.module').then(m => m.ProfilePageModule)
   }
 ];
 

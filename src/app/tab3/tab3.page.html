@@ -11,7 +11,7 @@
     <ion-searchbar showCancelButton="always" [(ngModel)]="searchText"></ion-searchbar>
     <ion-list *ngFor=" let hero of heroes | filter:searchText">
       <ion-item>
-        <ion-button>{{ hero.name }}, sells {{hero.produce}}</ion-button>
+        <ion-button [routerLink]="['profile']">{{ hero.name }}, sells {{hero.produce}}</ion-button>
       </ion-item>
     </ion-list>
   </ion-content>
