@@ -1,63 +1,21 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title size="small">Profile</ion-title>
+    <ion-title size="small">Account</ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-avatar>
-  <img
-    src="https://www.intheblack.com/-/media/intheblack/allimages/magazine-2020/06-june/farmer-standing-in-field.jpg?rev=a3738b7326974d349044fc34db4db590"
-  />
-</ion-avatar>
+
 <ion-item>
-  <ion-label>Name</ion-label>
-  <ion-input></ion-input>
+  <ion-label>Card Information</ion-label>
 </ion-item>
 <ion-item>
-  <ion-label>Phone Number</ion-label>
-  <ion-input></ion-input>
+  <ion-label>Adresss</ion-label>
+</ion-item>
+<ion-item>
+  <ion-label>Notifications</ion-label>
+</ion-item>
+<ion-item>
+  <ion-label>Privacy</ion-label>
 </ion-item>
 <ion-content class="ion-padding">
-  <ion-segment
-    color="primary"
-    [(ngModel)]="type"
-    (ionChange)="segmentChanged($event)"
-    scrollable
-  >
-    <ion-segment-button value="Posts" checked>
-      <ion-label>Posts</ion-label>
-      <ion-icon name="chatbox-outline"></ion-icon>
-    </ion-segment-button>
-    <ion-segment-button value="Selling">
-      <ion-label>Selling</ion-label>
-      <ion-icon name="cash"></ion-icon>
-    </ion-segment-button>
-  </ion-segment>
 
-  <div [ngSwitch]="type">
-    <ion-list *ngSwitchCase="'Posts'">
-      <ion-item>
-        <ion-thumbnail slot="start">
-          <ion-icon name="add-circle-outline"></ion-icon>
-        </ion-thumbnail>
-        <ion-segment-button
-          value="Posts"
-          (click)="presentAlertPrompt()"
-          checked
-        >
-          <ion-label>Add a Post</ion-label>
-        </ion-segment-button>
-      </ion-item>
-    </ion-list>
-
-    <ion-list *ngSwitchCase="'Selling'">
-      <ion-item>
-        <ion-thumbnail slot="start">
-          <ion-icon name="add-circle-outline"></ion-icon>
-        </ion-thumbnail>
-        <ion-segment-button value="Posts" checked>
-          <ion-label>Add Produce</ion-label>
-        </ion-segment-button>
-      </ion-item>
-    </ion-list>
-  </div>
 </ion-content>
