@@ -13,12 +13,7 @@
 </ion-avatar>
 <ion-label> Based in San Jose</ion-label>
 <ion-content class="ion-padding">
-  <ion-segment
-    color="primary"
-    [(ngModel)]="type"
-    (ionChange)="segmentChanged($event)"
-    scrollable
-  >
+  <ion-segment color="primary" [(ngModel)]="type" (ionChange)="segmentChanged($event)" scrollable>
     <ion-segment-button value="Posts" checked>
       <ion-label>Posts</ion-label>
       <ion-icon name="chatbox-outline"></ion-icon>
@@ -30,7 +25,17 @@
   </ion-segment>
 
   <div [ngSwitch]="type">
-    <ion-list *ngSwitchCase="'Posts'"> </ion-list>
+    <ion-list *ngSwitchCase="'Posts'">
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/536aa61fe4b017ad6783e099/1418916428229-KMHUBHA0ZMN4T9PGUCGG/lettuce.jpg?format=1000w"
+          />
+        </ion-thumbnail>
+        <ion-label>Come Checkout my boston lettuce, today at the farmer's market</ion-label>
+
+      </ion-item>
+    </ion-list>
 
     <ion-list *ngSwitchCase="'Selling'">
       <ion-item>
