@@ -5,22 +5,25 @@
     </ion-title>
   </ion-toolbar>
 </ion-header>
+<h1>Categories</h1>
 
-<ion-content [fullscreen]="true">
-  <h1>Categories</h1>
-  <section class="full-width">
-    <ion-button expand="full" [routerLink]="['vegetables']" color="secondary">Vegetables</ion-button>
-  </section>
-  <section class="full-width">
-    <ion-button expand="full" [routerLink]="['fruits']" color="secondary">Fruits</ion-button>
-  </section>
-  <section class="full-width">
-    <ion-button expand="full" [routerLink]="['seeds']" color="secondary">Seeds</ion-button>
-  </section>
+<div class="scroll">
+  <ion-button class="button" [routerLink]="['vegetables']" color="secondary">Vegetables</ion-button>
+
+  <ion-button class="button" [routerLink]="['fruits']" color="secondary">Fruits</ion-button>
+
+  <ion-button class="button" [routerLink]="['seeds']" color="secondary">Seeds</ion-button>
+
+
+</div>
+
+
+<ion-content>
+
   <h2> Top Rated Farmers</h2>
   <h6>Miss P</h6>
   <ion-item>
-    <ion-button> 
+    <ion-button>
       <img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Woman-Farmer.jpg" [routerLink]="['profile']">
       <ion-label> Miss P</ion-label>
     </ion-button>
