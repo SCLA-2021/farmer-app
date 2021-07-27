@@ -12,7 +12,7 @@
 
   <ion-button class="button" [routerLink]="['fruits']" color="secondary">Fruits</ion-button>
 
-  <ion-button class="button" [routerLink]="['seeds']" color="secondary" (click)="change()" checked>Seeds</ion-button>
+  <ion-button class="button" color="secondary" (click)="change()" checked>Seeds</ion-button>
 
 
 </div>
@@ -20,7 +20,7 @@
 
 <ion-content>
 
-  <h2> Top Rated Farmers</h2>
+  <h2 (click)="change()">{{text}}</h2>
   <h6>Miss P</h6>
   <ion-button class="farmers">
     <img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Woman-Farmer.jpg" [routerLink]="['profile']">

@@ -7,9 +7,9 @@ import { ElementRef, ViewChild } from '@angular/core';
   styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page {
-
+  page: string = 'Top Rated Farmers';
   constructor() {}
-  async change(){
-
+  async change() {
+    this.page = 'Farmers that sell seeds';
   }
 }
