@@ -7,11 +7,11 @@
 </ion-header>
 <h1>Categories</h1>
 <div class="scroll">
-<ion-button class="button" [routerLink]="['vegetables']" color="secondary">Vegetables</ion-button>
+<ion-button class="button" (click)="change()" checked color="secondary">Vegetables</ion-button>
 
 <ion-button class="button" [routerLink]="['fruits']" color="secondary">Fruits</ion-button>
 
-<ion-button class="button"  color="secondary" (click)="change()" checked>Seeds</ion-button>
+<ion-button class="button"  color="secondary">Seeds</ion-button>
 
 
 
