@@ -1,21 +1,22 @@
-<ion-searchbar id="search"></ion-searchbar>
-
-<h1>Categories</h1>
-<div class="scroll">
-  <ion-button class="button" (click)="change()" checked color="secondary">Vegetables</ion-button>
-
-  <ion-button class="button" [routerLink]="['fruits']" color="secondary">Fruits</ion-button>
-
-  <ion-button class="button" color="secondary">Seeds</ion-button>
-
-
-
-</div>
-
-
 <ion-content>
+  <ion-searchbar id="search"></ion-searchbar>
 
-  <h2>{{page}}</h2>
+  <ion-label>Categories</ion-label>
+  <div class="scroll">
+    <ion-button class="button" (click)="change()">Vegetables</ion-button>
+
+    <ion-button class="button" [routerLink]="['fruits']">Fruits</ion-button>
+
+    <ion-button class="button">Seeds</ion-button>
+
+    <ion-button class="button">Nuts</ion-button>
+
+    <ion-button class="button">Dairy</ion-button>
+
+
+  </div>
+
+  <ion-label>{{page}}</ion-label>
   <h6>Miss P</h6>
   <ion-button class="farmers">
     <img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Woman-Farmer.jpg" [routerLink]="['profile']">
