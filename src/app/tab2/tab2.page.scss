@@ -24,11 +24,18 @@
 ion-content {
   --ion-background-color: #ffebeb;
 }
-.farmers {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 342px;
-  height: 243px;
-  
+.scrolly {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  white-space: nowrap;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .farmers {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 342px;
+    height: 243px;
+  }
 }
