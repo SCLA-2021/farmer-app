@@ -1,18 +1,14 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title size="small">Miss P</ion-title>
-    <ion-button [routerLink]="['cart']">
-      <ion-icon name="cart-outline"></ion-icon>
-    </ion-button>
-  </ion-toolbar>
+
 </ion-header>
-<ion-avatar>
-  <img
+<ion-content class="ion-padding">
+
+  <ion-avatar>
+    <img
     src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Woman-Farmer.jpg"
   />
-</ion-avatar>
-<ion-label> Based in San Jose</ion-label>
-<ion-content class="ion-padding">
+  </ion-avatar>
+  <ion-label> Based in San Jose</ion-label>
   <ion-segment color="primary" [(ngModel)]="type" (ionChange)="segmentChanged($event)" scrollable>
     <ion-segment-button value="Posts" checked>
       <ion-label>Posts</ion-label>
