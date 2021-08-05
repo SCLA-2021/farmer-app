@@ -1,14 +1,49 @@
 ion-content {
   --ion-background-color: #ffebeb;
 }
-ion-avatar {
-  display:block;
+#avatar {
+  position: relative;
+  display: block;
+  margin-top: -10px;
   margin-left: auto;
   margin-right: auto;
-  width:100% !important;  
-  height : 100% !important;  
-  max-width: 100px !important;  //any size
-  max-height: 100px !important;
-  border: 4px solid #FFFFFF !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 160px !important; //any size
+  max-height: 160px !important;
 }
-]
+
+.text {
+  display: flex;
+  justify-content: center;
+  color: #d91919;
+  font: Inter;
+  font-style: normal;
+  font-weight: 55;
+}
+#name {
+  font-size: 2em;
+}
+#cart {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+#back {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+#star {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#rectangle {
+  background-color: #d91919;
+  width: 120%;
+  height: 35%;
+  z-index: -100;
+  margin: -30px;
+  margin-bottom: -115px;
+}

@@ -2,13 +2,18 @@
 
 </ion-header>
 <ion-content class="ion-padding">
+  <div id="rectangle"></div>
+  <img id = "back" src = "https://lh4.googleusercontent.com/J_ryNPLgttOZ-CMOvROu9JMhB1EfgE9SfrKtiVpPba2zVW11oSfQfpM1n1Ql4P8RJDnJkbHlI5qpjg163jKNdWvkYoB9jic_C4YSZQqSIHIta3lDiJS28vnWpinR-rctdpWFSBi6">
+  <img id = "cart" src= "https://lh4.googleusercontent.com/Uar7UY8ulMpzODZYaEVgnUL6NRbKGpJJWr2DwbnG61SMjtyQbq96J6Y5NHc5jNr9ZeO0295JgzvqUoBeHL0d_dwUrFaWyTNUFjdIBkds2c88s5v0k_wyaAl0Hl94H-FrrPeTlAlv">
 
-  <ion-avatar>
-    <img
-    src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Woman-Farmer.jpg"
+  <img id = "avatar"
+    src="https://lh5.googleusercontent.com/wVAXam3YAHgpFCwH5JeRrU_y3i2LYGA7fFdwdfDWkVd7Lirt14UQn7jQL1LOiGonCvvqUYhk25m7dpMIy1XFgqYHUrrh-U3n8htuYYOTu0_s0m5WyJameKY6xXc_EuCGC57-vxwg"
   />
-  </ion-avatar>
-  <ion-label> Based in San Jose</ion-label>
+  <ion-label class="text" id="name"> Delighten Dee</ion-label>
+  <ion-label class="text"> Based in San Jose</ion-label>
+
+
+  <img id = "star" src = "https://lh3.googleusercontent.com/gUXb1Nq7TphW1DHyJZKUyb_TwNvDqloF7lIsKgqJ4N2GFzd0N7GCOiXWBnK4y8CSVx_ddFd9CaDwnwb53o1Z62ZpMAvkLsmV0125mu0H7LSywHbEfz5rUhQxEy59pJ6ga95FblOr">
   <ion-segment color="primary" [(ngModel)]="type" (ionChange)="segmentChanged($event)" scrollable>
     <ion-segment-button value="Posts" checked>
       <ion-label>Posts</ion-label>
