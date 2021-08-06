@@ -4,7 +4,7 @@
 <ion-content class="ion-padding">
   <div id="rectangle"></div>
   <img id = "back" src = "https://lh4.googleusercontent.com/J_ryNPLgttOZ-CMOvROu9JMhB1EfgE9SfrKtiVpPba2zVW11oSfQfpM1n1Ql4P8RJDnJkbHlI5qpjg163jKNdWvkYoB9jic_C4YSZQqSIHIta3lDiJS28vnWpinR-rctdpWFSBi6">
-  <img id = "cart" src= "https://lh4.googleusercontent.com/Uar7UY8ulMpzODZYaEVgnUL6NRbKGpJJWr2DwbnG61SMjtyQbq96J6Y5NHc5jNr9ZeO0295JgzvqUoBeHL0d_dwUrFaWyTNUFjdIBkds2c88s5v0k_wyaAl0Hl94H-FrrPeTlAlv">
+  <img id = "cart" src= {{icon}} [routerLink]="['cart']">
 
   <img id = "avatar"
     src="https://lh5.googleusercontent.com/wVAXam3YAHgpFCwH5JeRrU_y3i2LYGA7fFdwdfDWkVd7Lirt14UQn7jQL1LOiGonCvvqUYhk25m7dpMIy1XFgqYHUrrh-U3n8htuYYOTu0_s0m5WyJameKY6xXc_EuCGC57-vxwg"
@@ -30,16 +30,9 @@
     </ion-list>
 
     <ion-list *ngSwitchCase="'Selling'">
-      <ion-item>
-        <ion-thumbnail slot="start">
-          <img
-            src="https://s3.amazonaws.com/finecooking.s3.tauntonclud.com/app/uploads/2017/04/24170631/ING-butter-lettuce-main.jpg"
-          />
-        </ion-thumbnail>
-        <ion-segment-button value="Selling" checked (click)="cart()">
-          <ion-label>Boston Lettuce</ion-label>
-        </ion-segment-button>
-      </ion-item>
+      <img class = "pic" src = "https://lh3.googleusercontent.com/GjqYFbLYwKoeFT6usmzSEPkwoqaSLQlXAD_LLQj4hLR3-8LFhXMIdld8YiIo9-ocylz_icHFc-HLCnLogpsyhkMzV2E4TUgRUOvp35HotUE62LqqMZEXcORSggOQzIXIbG8Vmp_g" (click) = "change()">
+      <img class = "pic" src = "https://lh4.googleusercontent.com/uc8KfozswXfbYrQnX-bt0iBB9LHvJfK1wDPYfEGIjVQmmTkhRF9UrmQTDjuj9Pi68oOTVjs1XjKZ_knrOGoPno0atiJZdcW6jqmIVV_jtjTTzJaZkbqC3Pea1xJALOxUCD1d5ucj">
+      <img class = "pic" src = "https://lh4.googleusercontent.com/Ia2bSHnsMrbJ95FJmlnt1b8L1_-I9WS0vFTxA8t8J9wYknpUnHvbgSpcwz5wVZr9sxkLKHtQlsOH_squyHJASppPVb52nMqKv0lxgszN2OHl9Lht_4Ljn11XCNfjdX5RNlW25Wg1">
     </ion-list>
   </div>
 

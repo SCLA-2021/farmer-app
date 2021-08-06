@@ -10,6 +10,6 @@ export class Tab2Page {
   page: string = 'Top Rated Farmers';
   constructor() {}
   async change() {
-    this.page = 'Farmers that sell vegeta';
+    this.page = 'Farmers that sell vegetables';
   }
 }
