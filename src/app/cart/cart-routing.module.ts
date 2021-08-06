@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CartPage } from './cart.page';
-import { PaymentPage } from '../payment/payment.page';
 
 const routes: Routes = [
   {
@@ -12,6 +11,11 @@ const routes: Routes = [
     path: 'payment',
     loadChildren: () =>
       import('../payment/payment.module').then(m => m.PaymentPageModule)
+  },
+  {
+    path: 'order',
+    loadChildren: () =>
+      import('../order/order.module').then(m => m.OrderPageModule)
   }
 ];
 

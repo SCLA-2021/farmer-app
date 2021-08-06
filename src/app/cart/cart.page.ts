@@ -10,8 +10,9 @@ export class CartPage {
   constructor(public modalController: ModalController) {}
   async openModal() {
     const modal = await this.modalController.create({
-      component: PaymentPage
+      component: PaymentPage, cssClass: 'my-custom-class'
     });
+    console.log('modal activateds');
     return await modal.present();
   }
 }
