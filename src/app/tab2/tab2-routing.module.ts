@@ -19,11 +19,7 @@ const routes: Routes = [
         m => m.VegetablesPageModule
       )
   },
-  {
-    path: 'fruits',
-    loadChildren: () =>
-      import('../fruits/fruits.module').then(m => m.FruitsPageModule)
-  },
+
   {
     path: 'seeds',
     loadChildren: () =>
