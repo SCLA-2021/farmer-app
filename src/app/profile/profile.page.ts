@@ -10,6 +10,7 @@ export class ProfilePage {
     'https://lh4.googleusercontent.com/Uar7UY8ulMpzODZYaEVgnUL6NRbKGpJJWr2DwbnG61SMjtyQbq96J6Y5NHc5jNr9ZeO0295JgzvqUoBeHL0d_dwUrFaWyTNUFjdIBkds2c88s5v0k_wyaAl0Hl94H-FrrPeTlAlv';
   constructor() {}
   async change() {
-    // this.icon = 'https://lh4.googleusercontent.com/J_ryNPLgttOZ-CMOvROu9JMhB1EfgE9SfrKtiVpPba2zVW11oSfQfpM1n1Ql4P8RJDnJkbHlI5qpjg163jKNdWvkYoB9jic_C4YSZQqSIHIta3lDiJS28vnWpinR-rctdpWFSBi6';
+    this.icon =
+      'https://lh4.googleusercontent.com/tWDc-WKaCGqMG07TRiALBWJVCiQ8NA-UYHAFUV5Fyx4askK3JUPn_FoqTpgRF_2JOdXDgNM2EP2rym5HlVIiwQdLVPZPYwPQo8y_7JG_n8lt6h_hiAI2S66QgE-5unvycz7XnhVj';
   }
 }
